@@ -1,0 +1,19 @@
+---
+# tasks file for rubencougil.kibana
+
+- name: Add Kibana Repositories
+  sudo: yes
+  copy:
+    src: ./files/kibana.repo
+    dest: /etc/yum.repos.d/
+
+- name: Install Kibana
+  sudo: yes
+  yum:
+    name: kibana
+
+- name: Add Kibana Config
+  sudo: yes
+  copy:
+    src: ./files/kibana.repo
+    dest: /etc/kibana/

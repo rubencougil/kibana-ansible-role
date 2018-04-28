@@ -1,0 +1,7 @@
+---
+# handlers file for rubencougil.kibana
+
+- name: Start service Kibana, if not running
+  service:
+    name: kibana
+    state: restarted
