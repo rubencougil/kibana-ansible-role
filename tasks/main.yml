@@ -15,5 +15,5 @@
 - name: Add Kibana Config
   sudo: yes
   copy:
-    src: ./files/kibana.repo
+    src: ./files/kibana.yml
     dest: /etc/kibana/
