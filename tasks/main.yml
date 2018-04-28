@@ -17,3 +17,8 @@
   copy:
     src: ./files/kibana.yml
     dest: /etc/kibana/
+
+- name: Start service
+  service:
+    name: kibana
+    state: started
